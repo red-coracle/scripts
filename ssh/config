@@ -1,0 +1,10 @@
+Host *
+ ControlMaster auto
+ ControlPath ~/.ssh/%r@%h-%p
+ ControlPersist 120
+ Compression yes
+
+Host github.com
+ User git
+ Hostname github.com
+ IdentityFile ~/.ssh/github_id_rsa
