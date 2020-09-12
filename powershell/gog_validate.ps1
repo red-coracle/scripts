@@ -1,7 +1,8 @@
 $gog_hashes = "0db093590538192f52b39c94119a48cb",
 "0b84cdeccabf7d06904bfbe923c3cfea",
 "0b2ce86937cd32092d0c003efdf5d988",
-"06f56dd38538018e9a31248796e640ab"
+"06f56dd38538018e9a31248796e640ab",
+"05b5d9d6bb2960fbd330c5d6b9b7b7d2"
 
 Get-ChildItem "." -Recurse -Filter *.exe |
 Foreach-Object {
