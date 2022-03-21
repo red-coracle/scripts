@@ -1,0 +1,15 @@
+tcp:
+  routers:
+    passthrough:
+      rule: "HostSNI(`*`)"
+      entryPoints:
+        - "websecure"
+      service: passthrough
+      tls:
+        passthrough: true
+
+  services:
+    passthrough:
+      loadBalancer:
+        servers:
+          - address: "1.2.3.4:443"
